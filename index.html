@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/f76628624f.js" crossorigin="anonymous"></script>
+
+  <!-- reset all the values of the css for all the browsers -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- css applied -->
+  <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+  <title>Alfonso Manzano Gonzalez</title>
+</head>
+
+
+<!-- Body -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="30">
+
+  <!--         landing page    -->
+  <header id="top">
+    <!--      navbar     -->
+    <nav id="navbarmain" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand brand" href="#top">AMG</a>
+        <button class="navbar-toggler toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color:#e67e22; font-size:28px;"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <!-- pending -->
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--    end of navbar     -->
+    <!--      content on landing page     -->
+    <div class="hero-text-box">
+      <h1>Hello, my name is Alfonso.</h1>
+      <h1>Dream Big...<br /> Make the difference!</h1>
+    </div>
+    <div class="chevron">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+    <!--   end of content on landing page     -->
+  </header>
+  <!--      end of   landing page    -->
+
+  <!-- about-me section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <!-- <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+          <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+          <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div> -->
+
+          <h2 class="section-title">About</h2>
+        </div>
+      </div>
+      <div class="row section-container">
+        <div id="picture-me" class="col-md-4 order-md-2 animated">
+          <div class="me">
+            <div>
+              <figure class="fig">
+                <img src="resources/img/me.jpg" alt="Alfonso Manzano">
+              </figure>
+            </div>
+            <div class="name">
+              <h2>Alfonso</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8  order-md-1 about-me">
+          <div class="row">
+            <div class="col">
+              <p>Hello! I'm Alfonso, a Computer Engineer based in Houston, Texas. I am very
+                passionate about technology and its use to solve problems. During the last year, I have
+                worked as a research assistant for a project using machine learning on image and voice
+                recognition at University of Houston-Clear Lake. Similarly, I have been learning new technologies
+                in web development that will help to continue growing my skill set.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p>
+                I graduated with honors from the University of Houston-Clear Lake Class 2020. As recent
+                graduated Engineer, I am eager to contribute to society with all my set of hard and soft skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about-me section -->
+
+
+  <!-- portfolio section -->
+  <section id="projects" class="projects-section sections bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-title">Portfolio</h2>
+        </div>
+      </div>
+      <div class="row section-container">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card shadow  mb-5 bg-white rounded">
+            <img src="resources/img/journal.png" class="card-img" alt="Project">
+            <div class="card-img-overlay  filter">
+              <a href="#" data-toggle="modal" data-target="#DailyJournal">
+                <i class="fas fa-plus-circle icon-project"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card shadow  mb-5 bg-white rounded">
+            <img src="resources/img/guess.png" class="card-img" alt="Project">
+            <div class="card-img-overlay  filter">
+              <a href="#" data-toggle="modal" data-target="#GuessMyCard">
+                <i class="fas fa-plus-circle icon-project"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card shadow  mb-5 bg-white rounded">
+            <img src="resources/img/list.png" class="card-img" alt="Project">
+            <div class="card-img-overlay  filter">
+              <a href="#" data-toggle="modal" data-target="#TaskList">
+                <i class="fas fa-plus-circle icon-project"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 ">
+          <div class="card shadow  mb-5 bg-white rounded">
+            <img src="resources/img/newsletter.png" class="card-img" alt="Project">
+            <div class="card-img-overlay  filter">
+              <a href="#" data-toggle="modal" data-target="#NewsLetter">
+                <i class="fas fa-plus-circle icon-project"></i>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of portfolio section -->
+
+
+  <!-- contact section pending -->
+  <!-- <section id="contact" class="section-form">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-title">Contact</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>We're happy to hear from you</h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col">
+          <form method="post" action="#" class="contact-form">
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="name">Name</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label for="email">Email</label>
+              </div>
+              <div class="col span-2-of-3">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>Drop us a line</label>
+              </div>
+              <div class="col span-2-of-3">
+                <textarea name="message" placeholder="Your message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col span-1-of-3">
+                <label>&nbsp;</label>
+              </div>
+              <div class="col span-2-of-3">
+                <button type="" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </section> -->
+
+
+
+
+
+  <!-- footer -->
+  <section id="footer" class="Footer">
+    <div class="container">
+      <div id="Icon-contact" class="icon-Contact" style="color: rgb(238,222,222);">
+        <div><a class="icons" href="https://www.linkedin.com/in/amanzano05/" target="_blank"><i class="fa fa-linkedin-square"></i></a><a class="icons" href="https://github.com/amanzano05" target="_blank"><i class="fa fa-github-square"></i></a><a
+            class="icons" href="mailto:amanzano05@icloud.com" target="_top"><i class="fa fa-envelope-square"></i></a></div>
+        <div>
+          <p style="font-size: 0.75rem;color: rgb(247,238,238);margin-bottom: -0;padding-top: 0;padding-bottom: 1rem;">© 2020 Alfonso Manzano Gonzalez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  end footer -->
+
+  <!-- Modals -->
+  <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="DailyJournal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="underline">Daily Journal</h2>
+                  <span class="tools">React</span>
+                  <span class="tools">JQery</span>
+                  <span class="tools">MongoDB</span>
+                  <span class="tools">Node.js</span>
+                  <figure class="fig-modal">
+                    <img class="img-fluid d-block mx-auto image-modal" src="resources/img/journal.png">
+                  </figure>
+                  <!-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p> -->
+                  <div class="icon-container">
+                    <a class="icons" href="https://evening-citadel-93126.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a class="icons" href="https://github.com/amanzano05" target="_blank"><i class="fa fa-github-square"></i></a>
+                    <a class="icons " href="" data-dismiss="modal"><i class="far fa-window-close"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="NewsLetter" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="underline">Daily Journal</h2>
+                  <span class="tools">React</span>
+                  <span class="tools">JQery</span>
+                  <span class="tools">MongoDB</span>
+                  <span class="tools">Node.js</span>
+                  <figure class="fig-modal">
+                    <img class="img-fluid d-block mx-auto image-modal" src="resources/img/newsletter.png">
+                  </figure>
+                  <!-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p> -->
+                  <div class="icon-container">
+                    <a class="icons" href="https://polar-ridge-53959.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a class="icons" href="https://github.com/amanzano05" target="_blank"><i class="fa fa-github-square"></i></a>
+                    <a class="icons " href="" data-dismiss="modal"><i class="far fa-window-close"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="GuessMyCard" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="underline">Daily Journal</h2>
+                  <span class="tools">React</span>
+                  <span class="tools">JQery</span>
+                  <span class="tools">MongoDB</span>
+                  <span class="tools">Node.js</span>
+                  <figure class="fig-modal">
+                    <img class="img-fluid d-block mx-auto image-modal" src="resources/img/guess.png">
+                  </figure>
+                  <!-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p> -->
+                  <div class="icon-container">
+                    <a class="icons" href="https://o6mv8ntjnl5g9j5fjfbjea-on.drv.tw/Web%20Development/Full%20Stack%20BootCamp/www.Guess.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a class="icons" href="https://github.com/amanzano05/guess_my_card" target="_blank"><i class="fa fa-github-square"></i></a>
+                    <a class="icons " href="" data-dismiss="modal"><i class="far fa-window-close"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade portfolio-modal" role="dialog" tabindex="-1" id="TaskList" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="underline">Daily Journal</h2>
+                  <span class="tools">React</span>
+                  <span class="tools">JQery</span>
+                  <span class="tools">MongoDB</span>
+                  <span class="tools">Node.js</span>
+                  <figure class="fig-modal">
+                    <img class="img-fluid d-block mx-auto image-modal" src="resources/img/list.png">
+                  </figure>
+                  <!-- <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                    cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                  </p> -->
+                  <div class="icon-container">
+                    <a class="icons" href="https://hidden-sea-34942.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a class="icons" href="https://github.com/amanzano05" target="_blank"><i class="fa fa-github-square"></i></a>
+                    <a class="icons " href="" data-dismiss="modal"><i class="far fa-window-close"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Modals -->
+  <!-- scripts -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/app.js"></script>
+  <!-- end of script -->
+</body>
+<!-- end of Body -->
+
+</html>

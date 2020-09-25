@@ -1,0 +1,307 @@
+/* ----> basic setup <------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+[class*="col"] {
+  text-align: left;
+}
+
+/* ---->  general use <--------*/
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* used for titles */
+h2{
+  font-weight: 600;
+}
+
+/* for underline */
+.underline {
+  border-bottom: 2px solid #e67e22;
+  margin: 6px;
+}
+
+/* format title of section */
+.section-title{
+  color: #555;
+  text-align: left;
+  border-bottom: 2px solid #e67e22;
+  margin-bottom: 20px;
+}
+
+.bg-light{
+  background-color: #f8f9fa!important;
+}
+/*----> endl of general use <---- */
+
+
+/* ---->       header           <------ */
+/* format for the text on landing page  */
+header {
+  /* darks the image used as background */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh; /* take the hight of the viewport */
+}
+
+/* used on div containing the text */
+.hero-text-box {
+  width: 60%;
+  text-align: left;
+  /* centered */
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* text on top of the background */
+h1 {
+  color: #fff;
+  font-size: 300%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/* media query for formating h1 */
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+/* link on the landing page */
+.chevron {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 2%;
+  font-size: 300%;
+}
+
+.chevron a:hover {
+  color: #e67e22;
+}
+
+.chevron a {
+  color: #fff;
+}
+
+/* ---->  end of header           <------ */
+
+
+/* ------->       navbar          <------ */
+/* places: navbar */
+/* barnd same color all the time */
+.brand, .brand:hover {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.nav-link:link, .nav-link:visited {
+  color: white;
+  margin-left: 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-bottom: 2px solid transparent;
+  padding: 8px 0;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+/* used for menu in mobile */
+/* set the navbar on top */
+.navbar {
+  z-index: 5;
+  background-color: #333;
+}
+
+/* effect of underline when hovering */
+.nav-link:hover, .nav-link:active {
+  border-bottom: 2px solid #e67e22;
+}
+/* ------->   end of navbar          <------ */
+
+/* query for mobile */
+@media only screen and (max-width: 992px) {
+  /* menu on mobile */
+  .nav-link:link, .nav-link:visited {
+    width: 100%;
+    background-color: rgba(217, 130, 59, 0.9);
+    border-bottom: none;
+    margin-left: 0px;
+    padding-left: 20px;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    text-align: left;
+  }
+  .nav-link:hover, .nav-link:active {
+    background-color: rgba(195, 113, 48, 0.9);
+  }
+}
+
+/* ------->    end of  navbar          <------ */
+
+
+
+
+/*-----> about section <--------*/
+/* div container for image and name */
+.me {
+  text-align: left;
+  top: 50%;
+  transform: translate(0%, -50%);
+  position: absolute;
+}
+
+/* figure container for picture */
+.fig {
+  background-color: #000;
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.me img {
+  width: 100%;
+  opacity: 0.7;
+  border-radius: 20px;
+}
+
+.name h2 {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 110px;
+  left: 120px;
+  font-size: 300%;
+  line-height: 1;
+  color: rgb(0, 0, 0);
+  opacity: 0.15;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .me {
+    /* text-align: center; */
+    position: relative;
+    margin: auto;
+    width: 50%;
+  }
+
+  .about-me h2, p {
+    text-align: center;
+  }
+}
+
+/* -------> projects <--------- */
+.section-container{
+  margin-top: 30px;
+}
+
+.project-photo {
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.project-photo img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.filter{
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(195, 113, 48, 0.9);
+}
+
+.filter:hover{
+  opacity: 1;
+}
+
+.icon-project{
+  color: white;
+  font-size: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icon-project:hover {
+  color: #edd;
+}
+
+
+
+/* footer */
+.Footer {
+  background-color: #333;
+  height: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.icons {
+  font-size: 2.5rem;
+  color: #888;
+  margin: 2rem;
+}
+
+.icons:hover {
+  color: #3b5998;
+}
+
+/* modals */
+.modal-body {
+  text-align: center;
+}
+
+.image-modal {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.fig-modal {
+  background-color: #000;
+  margin-bottom: 6px;
+}
+
+.tools {
+  padding: 0px 2px;
+  color: #fff;
+  /* font-family: "Fira Code", monospace; */
+  letter-spacing: 0.05em;
+  font-size: 100%;
+  background-color: #555;
+  border-radius: 2px;
+}
+
+.icon-container {
+  border-top: 2px solid #e67e22;
+}
+
+.animated{
+  display: none;
+}
